@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurora — Create Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="auth-card">
+    <div class="auth-header">
+      <span class="logo">🚀</span>
+      <h1>Create Account</h1>
+      <p>Join Aurora and start your journey</p>
+    </div>
+
+    <form id="signupForm" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Jane Doe" autocomplete="name" />
+        <span class="error-text" id="fullNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="signupEmail">Email Address</label>
+        <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="email" />
+        <span class="error-text" id="signupEmailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="Create a password" autocomplete="new-password" />
+        <div class="strength-meter">
+          <div class="strength-meter-fill" id="strengthFill"></div>
+        </div>
+        <span class="error-text" id="signupPasswordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password" />
+        <span class="error-text" id="confirmPasswordError"></span>
+      </div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="agreeTerms" />
+        <label for="agreeTerms">I agree to the Terms &amp; Privacy Policy</label>
+      </div>
+      <span class="error-text" id="agreeTermsError"></span>
+
+      <button type="submit" class="btn-primary">Create Account 🌟</button>
+    </form>
+
+    <div class="auth-footer">
+      Already have an account? <a href="login.html">Sign in</a>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
